@@ -1,0 +1,49 @@
+### Caso: Empresa sin riesgo
+POST http://localhost:8080/api/riesgo
+Content-Type: application/json
+
+{
+  "empresaId": "EMP001",
+  "montoSolicitado": 10000,
+  "productoFinanciero": "LINEA_OPERATIVA",
+  "fechaSolicitud": "2025-10-24"
+}
+
+###
+
+### Caso: Empresa con deuda vencida
+POST http://localhost:8080/api/riesgo
+Content-Type: application/json
+
+{
+  "empresaId": "EMP002",
+  "montoSolicitado": 10000,
+  "productoFinanciero": "LINEA_OPERATIVA",
+  "fechaSolicitud": "2025-10-24"
+}
+
+###
+
+### Caso: Empresa nueva + monto alto
+POST http://localhost:8080/api/riesgo
+Content-Type: application/json
+
+{
+  "empresaId": "EMP003",
+  "montoSolicitado": 500000,
+  "productoFinanciero": "LINEA_OPERATIVA",
+  "fechaSolicitud": "2025-10-24"
+}
+
+###
+
+### Caso: Producto estricto (arrendamiento)
+POST http://localhost:8080/api/riesgo
+Content-Type: application/json
+
+{
+  "empresaId": "EMP004",
+  "montoSolicitado": 50000,
+  "productoFinanciero": "ARRENDAMIENTO_FINANCIERO",
+  "fechaSolicitud": "2025-10-24"
+}

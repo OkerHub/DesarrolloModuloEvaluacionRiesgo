@@ -1,0 +1,20 @@
+spring:
+  config:
+    activate:
+      on-profile: dev
+
+  datasource:
+    url: jdbc:h2:mem:ordenarisdb
+    driverClassName: org.h2.Driver
+    username: sa
+    password:
+  h2:
+    console:
+      enabled: true
+
+  jackson:
+    serialization:
+      INDENT_OUTPUT: true
+
+server:
+  port: 8080
