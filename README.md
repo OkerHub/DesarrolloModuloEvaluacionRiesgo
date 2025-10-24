@@ -10,3 +10,6 @@ Motor modular para evaluación de riesgo crediticio empresarial, diseñado para 
 
 ```bash
 mvn spring-boot:run
+
+
+Creado por Esteban Jimenez
